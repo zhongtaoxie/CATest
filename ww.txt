@@ -2,3 +2,35 @@ sdfasfawefa
 sadfasfas
 int safas;
 double sd;
+string sf;
+
+bool SharedDesktopArea::Apply()
+{
+	if (IsChecked(IDC_WINDOW) && m_hwndShared == NULL) {
+		MessageBox(NULL,
+				"You have not yet selected a window to share.\n"
+				"Please first select a window with the 'Window Target'\n"
+				"icon, and try again.", "No Window Selected",
+				 MB_OK | MB_ICONEXCLAMATION);
+		return false;
+	}
+	int asfda;
+
+
+	if (m_server->FullScreen()) {
+		RECT temp = GetScreenRect();
+		m_server->SetMatchSizeFields(temp.left, temp.top, temp.right, temp.bottom);
+	} else if (m_server->PrimaryDisplayOnlyShared()) {
+		int w = GetSystemMetrics(SM_CXSCREEN);
+		int h = GetSystemMetrics(SM_CYSCREEN);
+		m_server->SetMatchSizeFields(0, 0, w, h);
+	} else if (m_server->ScreenAreaShared()) {
+		int left, right, top, bottom;
+		m_pMatchWindow->GetPosition(left, top, right, bottom);
+		m_server->SetMatchSizeFields(left, top, right, bottom);
+	} else if  (m_server->WindowShared()) {
+		m_server->SetWindowShared(m_hwndShared);
+	}
+
+	return true;
+}
