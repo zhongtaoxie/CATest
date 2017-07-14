@@ -23,11 +23,6 @@ bool SharedDesktopArea::Apply()
 	} else if (m_server->PrimaryDisplayOnlyShared()) {
 		int w = GetSystemMetrics(SM_CXSCREEN);
 		int h = GetSystemMetrics(SM_CYSCREEN);
-		m_server->SetMatchSizeFields(0, 0, w, h);
-	}
-	asdfas;
-	asdf;
-	asfas;
-
+	
 	return true;
 }
