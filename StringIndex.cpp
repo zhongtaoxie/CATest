@@ -15,7 +15,8 @@ StringIndex::~StringIndex(void)
 	}
 }
 
-
+asfasdfasdf
+iasfasa
 
 BOOL StringIndex::Append(int nIndex, std::string szIndexName)
 {
