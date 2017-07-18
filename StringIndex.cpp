@@ -37,6 +37,7 @@ int getName2()
 {
 	int asdf;
 	int awe;
+	string sdf;
 }
 
 
