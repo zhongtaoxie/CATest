@@ -31,6 +31,8 @@ int getName()
 {
 	int asdf;
 	int awe;
+	
+	asdfasf;
 }
 
 int getName2()
