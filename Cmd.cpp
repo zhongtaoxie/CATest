@@ -9,4 +9,9 @@ CUEBAMonitorCmd::CUEBAMonitorCmd(void)
 	int asdf = 0;
 	int we=0;
 }
+CUEBAMonitorCmd::CUEBAMonitorCmd2(void)
+{
+	int asdf = 0;
+	int we=0;
+}
 
