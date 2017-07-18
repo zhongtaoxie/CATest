@@ -32,8 +32,7 @@ int getName()
 	int asdf;
 	int awe;
 	
-	asdfasf;
-	asdas
+
 	;
 }
 
