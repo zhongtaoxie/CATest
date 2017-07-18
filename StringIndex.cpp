@@ -30,6 +30,7 @@ std::string StringIndex::GetIndexName(int nIndex)
 int getName()
 {
 	int asdf;
+	int awe;
 }
 
 
