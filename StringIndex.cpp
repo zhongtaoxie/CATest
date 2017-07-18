@@ -27,6 +27,10 @@ std::string StringIndex::GetIndexName(int nIndex)
 {
 	return "";
 }
+int getName()
+{
+	int asdf;
+}
 
 
 
