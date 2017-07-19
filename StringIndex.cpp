@@ -13,6 +13,8 @@ StringIndex::~StringIndex(void)
 		for (iterErase = m_mpIndexList.begin(); iterErase != m_mpIndexList.end();)
 			iterErase = m_mpIndexList.erase(iterErase);
 	}
+	
+	interesting；
 }
 
 asfasdfasdf
@@ -29,12 +31,7 @@ std::string StringIndex::GetIndexName(int nIndex)
 }
 
 
-int getName2()
-{
-	int asdf;
-	int awe;
-	string sdf;
-}
+
 
 
 

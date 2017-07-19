@@ -45,16 +45,7 @@ void CPrintFrame::DoPrintView()
 	m_pMainDlg->ShowWindow(SW_HIDE);
 
 
-void CPrintFrame::DoPrint()
-{
-	if(m_pPrintView==NULL)
-	{
-		AfxMessageBox(_T("打印设备初始化失败！"));
-		return;
-	}
 
-	m_pPrintView->SendMessage(WM_COMMAND, ID_FILE_PRINT);
-}
 
 BEGIN_MESSAGE_MAP(CPrintFrame, CFrameWnd)
 	ON_WM_CREATE()
