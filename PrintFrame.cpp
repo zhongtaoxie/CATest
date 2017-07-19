@@ -44,12 +44,6 @@ void CPrintFrame::DoPrintView()
 	::SetWindowPos(this->GetSafeHwnd(), HWND_TOPMOST,0,0,0,0,SWP_NOSIZE|SWP_NOMOVE);
 	m_pMainDlg->ShowWindow(SW_HIDE);
 
-	CWinApp	*pApp		= AfxGetApp();
-
-	pApp->m_pMainWnd	= this;
-
-	m_pPrintView->OnFilePrintPreview();
-}
 
 void CPrintFrame::DoPrint()
 {
