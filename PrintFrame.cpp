@@ -40,9 +40,6 @@ void CPrintFrame::DoPrintView()
 	SetIcon(m_pMainDlg->GetIcon(FALSE), FALSE);
 	SetIcon(m_pMainDlg->GetIcon(TRUE), TRUE);
 	ShowWindow(SW_MAXIMIZE);
-	//ShowWindow(SW_SHOW);
-	::SetWindowPos(this->GetSafeHwnd(), HWND_TOPMOST,0,0,0,0,SWP_NOSIZE|SWP_NOMOVE);
-	m_pMainDlg->ShowWindow(SW_HIDE);
 
 
 
@@ -67,6 +64,7 @@ int CPrintFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	context.m_pCurrentFrame	= this;
 	context.m_pCurrentDoc	= NULL;
 	context.m_pLastView		= NULL;
+	int sdff;
 
 	m_pPrintView	= STATIC_DOWNCAST(CPrintView, CreateView(&context));
 
