@@ -60,12 +60,6 @@ int CPrintFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	CCreateContext	context;
 
-	context.m_pNewViewClass	= RUNTIME_CLASS(CPrintView);
-	context.m_pCurrentFrame	= this;
-	context.m_pCurrentDoc	= NULL;
-	context.m_pLastView		= NULL;
-	int sdff;
-
 	m_pPrintView	= STATIC_DOWNCAST(CPrintView, CreateView(&context));
 
 	return 0;
